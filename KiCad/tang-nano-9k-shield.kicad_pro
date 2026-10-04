@@ -411,27 +411,27 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "tang-nano-9k-shield.kicad_sch",
-        "name": "schematic",
-        "uuid": "2ddb2f6b-c16c-4ad9-91cb-8c2a296992cf"
-      },
-      {
         "filename": "block_diagram.kicad_sch",
         "name": "block-diagram",
         "uuid": "e077a191-1935-45e1-a3ba-0d5cdd9c0e61"
+      },
+      {
+        "filename": "ps/2.kicad_sch",
+        "name": "FPGA",
+        "uuid": "58d3f204-fc5b-486a-b20d-74f1af4125d4"
       }
     ],
-    "used_designators": "",
+    "used_designators": "R1-11,C1,J1-2,#PWR1-4,U1-2",
     "variants": []
   },
   "sheets": [
     [
-      "2ddb2f6b-c16c-4ad9-91cb-8c2a296992cf",
-      "schematic"
-    ],
-    [
       "e077a191-1935-45e1-a3ba-0d5cdd9c0e61",
       "block-diagram"
+    ],
+    [
+      "58d3f204-fc5b-486a-b20d-74f1af4125d4",
+      "FPGA"
     ]
   ],
   "text_variables": {},
