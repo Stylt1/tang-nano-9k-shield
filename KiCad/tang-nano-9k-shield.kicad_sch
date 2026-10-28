@@ -21369,7 +21369,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 114.3) (xy 182.88 114.3)
+			(xy 175.26 118.11) (xy 180.34 118.11)
 		)
 		(stroke
 			(width 0)
@@ -21616,6 +21616,26 @@
 			(justify left bottom)
 		)
 		(uuid "03bf3079-76fa-4d76-8aa9-0510cd7be728")
+	)
+	(label "USB_D-"
+		(at 414.02 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c09ae5c6-db99-4044-aadc-05904c3b6cbc")
+	)
+	(label "USB_D+"
+		(at 414.02 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8cb15ab7-d2bd-4d24-9259-2bb5422f9204")
 	)
 	(label "D1+"
 		(at 381 210.82 180)
@@ -23329,7 +23349,7 @@
 	)
 	(global_label "5V"
 		(shape input)
-		(at 182.88 114.3 0)
+		(at 180.34 118.11 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -23339,7 +23359,7 @@
 		)
 		(uuid "37816d32-3421-475c-adcd-85e5e11850d9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 182.88 114.3 0)
+			(at 180.34 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24151,16 +24171,16 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 308.61 134.62 0)
+		(at 293.37 134.62 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "e1ecb5f6-672b-418c-bd0c-770faa4c57ad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 308.61 134.62 0)
+			(at 293.37 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38282,7 +38302,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 177.8 114.3 0)
+		(at 175.26 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -38292,7 +38312,7 @@
 		(dnp no)
 		(uuid "e8705ec7-ca81-45ea-b777-7ac6ced73350")
 		(property "Reference" "#FLG0901"
-			(at 177.8 112.39 0)
+			(at 175.26 116.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38303,7 +38323,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 177.8 109.22 0)
+			(at 175.26 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38313,7 +38333,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 114.3 0)
+			(at 175.26 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38324,7 +38344,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 114.3 0)
+			(at 175.26 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38335,7 +38355,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 177.8 114.3 0)
+			(at 175.26 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
