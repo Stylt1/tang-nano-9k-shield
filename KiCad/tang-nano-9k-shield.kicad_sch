@@ -15346,6 +15346,12 @@
 		(uuid "b202b8f9-6aad-45c4-bdec-9facc78ceb4b")
 	)
 	(junction
+		(at 293.37 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7f4c0d1-476d-462e-8f4a-9faf698385d2")
+	)
+	(junction
 		(at 439.42 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -15696,6 +15702,16 @@
 			(type default)
 		)
 		(uuid "01dd8b1c-8810-413c-8a34-1be632765212")
+	)
+	(wire
+		(pts
+			(xy 293.37 134.62) (xy 302.26 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0234374d-eb2d-4a91-8c38-c65a9ae3531a")
 	)
 	(wire
 		(pts
@@ -18279,7 +18295,7 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 134.62) (xy 302.26 134.62)
+			(xy 285.75 134.62) (xy 293.37 134.62)
 		)
 		(stroke
 			(width 0)
@@ -20099,6 +20115,16 @@
 	)
 	(wire
 		(pts
+			(xy 293.37 142.24) (xy 293.37 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0d05a43-fa40-46f6-881d-1f1dd2c8a900")
+	)
+	(wire
+		(pts
 			(xy 414.02 238.76) (xy 414.02 241.3)
 		)
 		(stroke
@@ -21617,26 +21643,6 @@
 		)
 		(uuid "03bf3079-76fa-4d76-8aa9-0510cd7be728")
 	)
-	(label "USB_D-"
-		(at 414.02 106.68 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c09ae5c6-db99-4044-aadc-05904c3b6cbc")
-	)
-	(label "USB_D+"
-		(at 414.02 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8cb15ab7-d2bd-4d24-9259-2bb5422f9204")
-	)
 	(label "D1+"
 		(at 381 210.82 180)
 		(effects
@@ -22507,6 +22513,16 @@
 		)
 		(uuid "895253b7-3648-46c0-9f19-de822d5205fe")
 	)
+	(label "USB_D+"
+		(at 414.02 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8cb15ab7-d2bd-4d24-9259-2bb5422f9204")
+	)
 	(label "CS2"
 		(at 226.06 323.85 180)
 		(effects
@@ -22707,6 +22723,16 @@
 		)
 		(uuid "b45d19a7-6627-4972-88fc-97db5a0c7816")
 	)
+	(label "GND"
+		(at 293.37 138.43 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b59fbc8f-51ca-4458-9eba-de31c713b7b1")
+	)
 	(label "VGA_B2"
 		(at 393.7 320.04 180)
 		(effects
@@ -22746,6 +22772,16 @@
 			(justify right bottom)
 		)
 		(uuid "bfff5f61-a059-4d24-a549-4f1628944d4c")
+	)
+	(label "USB_D-"
+		(at 414.02 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c09ae5c6-db99-4044-aadc-05904c3b6cbc")
 	)
 	(label "D1+"
 		(at 403.86 109.22 180)
@@ -24171,7 +24207,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 293.37 134.62 270)
+		(at 293.37 142.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -24180,7 +24216,7 @@
 		)
 		(uuid "e1ecb5f6-672b-418c-bd0c-770faa4c57ad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 293.37 134.62 90)
+			(at 293.37 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
