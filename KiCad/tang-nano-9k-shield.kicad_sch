@@ -5029,6 +5029,209 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at -1.27 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LED_Small"
+				(at -4.445 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode light-emitting-diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_Small_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_Small_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L_Small"
 			(pin_numbers
 				(hide yes)
@@ -16435,6 +16638,16 @@
 	)
 	(wire
 		(pts
+			(xy 341.63 116.84) (xy 342.9 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28f66ea8-01c8-4e0e-b7fb-a2a4992626ff")
+	)
+	(wire
+		(pts
 			(xy 299.72 74.93) (xy 299.72 60.96)
 		)
 		(stroke
@@ -17755,6 +17968,16 @@
 	)
 	(wire
 		(pts
+			(xy 359.41 118.11) (xy 359.41 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c86aeae-a7d0-494d-81a3-e6faa912f646")
+	)
+	(wire
+		(pts
 			(xy 433.07 323.85) (xy 438.15 323.85)
 		)
 		(stroke
@@ -17762,6 +17985,16 @@
 			(type default)
 		)
 		(uuid "5d90d357-f6c2-4f49-b05e-f5d9a421aeb0")
+	)
+	(wire
+		(pts
+			(xy 269.24 142.24) (xy 270.51 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d957cbd-ba94-4868-abf0-8747d7f16ed8")
 	)
 	(wire
 		(pts
@@ -19335,6 +19568,16 @@
 	)
 	(wire
 		(pts
+			(xy 278.13 143.51) (xy 278.13 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a64f3fd4-a283-4b45-ae2f-4c04d04a8c9a")
+	)
+	(wire
+		(pts
 			(xy 328.93 138.43) (xy 328.93 140.97)
 		)
 		(stroke
@@ -20535,6 +20778,16 @@
 	)
 	(wire
 		(pts
+			(xy 278.13 142.24) (xy 275.59 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d37ee9b3-3191-4960-b59b-a4e4e0f0e6c5")
+	)
+	(wire
+		(pts
 			(xy 469.9 66.04) (xy 472.44 66.04)
 		)
 		(stroke
@@ -20845,6 +21098,16 @@
 	)
 	(wire
 		(pts
+			(xy 359.41 116.84) (xy 355.6 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1944325-df68-4323-8ff2-616d7c1b4c06")
+	)
+	(wire
+		(pts
 			(xy 198.12 140.97) (xy 201.93 140.97)
 		)
 		(stroke
@@ -20912,6 +21175,16 @@
 			(type default)
 		)
 		(uuid "e46f5171-2701-4b5d-82af-58825716adf4")
+	)
+	(wire
+		(pts
+			(xy 262.89 142.24) (xy 264.16 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e48f4a76-7f52-4fd1-aef9-5bb52495046d")
 	)
 	(wire
 		(pts
@@ -21242,6 +21515,16 @@
 			(type default)
 		)
 		(uuid "f282f0ca-0d78-47d6-9ab6-1c9a6fe1c7fb")
+	)
+	(wire
+		(pts
+			(xy 347.98 116.84) (xy 350.52 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2b10cce-5e9e-44b5-9a33-211df61f3630")
 	)
 	(wire
 		(pts
@@ -21753,7 +22036,7 @@
 		)
 		(uuid "13e19a70-2b0f-4524-b810-4dd460c09fbd")
 	)
-	(label "PMOD1"
+	(label "PMOD8"
 		(at 314.96 342.9 0)
 		(effects
 			(font
@@ -21943,7 +22226,7 @@
 		)
 		(uuid "32beb5e6-60c0-4341-894d-c665ff823ad6")
 	)
-	(label "PMOD10"
+	(label "PMOD3"
 		(at 314.96 345.44 0)
 		(effects
 			(font
@@ -22113,7 +22396,7 @@
 		)
 		(uuid "4c619e76-d69e-43eb-882b-4d16c4d52545")
 	)
-	(label "PMOD8"
+	(label "PMOD4"
 		(at 314.96 350.52 0)
 		(effects
 			(font
@@ -22143,7 +22426,7 @@
 		)
 		(uuid "4efd7952-2b81-4cbd-9054-a35a215aac69")
 	)
-	(label "PMOD7"
+	(label "PMOD10"
 		(at 314.96 353.06 0)
 		(effects
 			(font
@@ -22163,7 +22446,7 @@
 		)
 		(uuid "51d1be93-1137-4f05-aac4-c1d1729fc18d")
 	)
-	(label "PMOD4"
+	(label "PMOD1"
 		(at 314.96 335.28 0)
 		(effects
 			(font
@@ -22233,7 +22516,7 @@
 		)
 		(uuid "5ed1a665-f9a8-47e8-96e1-1483d7978e94")
 	)
-	(label "PMOD3"
+	(label "PMOD7"
 		(at 314.96 337.82 0)
 		(effects
 			(font
@@ -23897,6 +24180,30 @@
 			)
 		)
 	)
+	(global_label "5V"
+		(shape input)
+		(at 262.89 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "aa1f7065-811b-4ff7-849b-01b25a88dd50")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 256.89 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "3V3"
 		(shape input)
 		(at 251.46 134.62 0)
@@ -24108,6 +24415,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "3V3"
+		(shape input)
+		(at 341.63 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cd3f8560-ebed-4783-950f-277a2f231997")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 335.63 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -24541,7 +24872,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x06_Odd_Even")
-		(at 342.9 340.36 0)
+		(at 342.9 342.9 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -28452,6 +28784,173 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED_Small")
+		(at 273.05 142.24 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3927ec85-a5a3-4157-bd5e-b838bf03b0c9")
+		(property "Reference" "D7"
+			(at 274.828 137.668 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GREEN"
+			(at 274.828 139.958 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 273.05 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 273.05 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2297"
+			(at 273.05 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "01e0038f-8238-477c-a0da-ae79bf3b373d")
+		)
+		(pin "2"
+			(uuid "2ce57426-844b-422c-9b10-551fd4f499fb")
+		)
+		(instances
+			(project "tang-nano-9k-shield"
+				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 278.13 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "3a40f567-0302-4605-b32e-284a85a3f3e2")
+		(property "Reference" "#PWR0978"
+			(at 278.13 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 278.13 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 278.13 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "95a86030-1734-4d0f-a6de-0dcd76dc5f1b")
+		)
+		(instances
+			(project "tang-nano-9k-shield"
+				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
+					(reference "#PWR0978")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 308.61 120.65 0)
 		(unit 1)
@@ -28974,6 +29473,83 @@
 			(project "tang-nano-9k-shield"
 				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
 					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 359.41 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "42e6f7fc-b1b8-482f-bcdb-3255dcf668b8")
+		(property "Reference" "#PWR0979"
+			(at 359.41 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 359.41 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 359.41 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 359.41 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 359.41 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "48120970-14af-40ea-807c-6c5aeb39ee62")
+		)
+		(instances
+			(project "tang-nano-9k-shield"
+				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
+					(reference "#PWR0979")
 					(unit 1)
 				)
 			)
@@ -30173,6 +30749,96 @@
 			(project "tang-nano-9k-shield"
 				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
 					(reference "#FLG0902")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 266.7 142.24 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4ebc77d1-eb12-44ce-8c4a-9fa219304f96")
+		(property "Reference" "R65"
+			(at 266.7 139.7 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 266.7 144.78 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 266.7 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 266.7 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 266.7 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45bf56f0-d17a-4bf7-bb59-749d75db28bd")
+		)
+		(pin "2"
+			(uuid "58a78b35-6178-4cd2-bfb3-cf8953e058f7")
+		)
+		(instances
+			(project "tang-nano-9k-shield"
+				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
+					(reference "R65")
 					(unit 1)
 				)
 			)
@@ -31703,7 +32369,7 @@
 		(dnp no)
 		(uuid "760b18ff-e7bc-4441-8091-80afa65dbc63")
 		(property "Reference" "C33"
-			(at 457.708 79.502 90)
+			(at 458.47 77.978 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31714,7 +32380,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 457.962 77.724 90)
+			(at 458.47 74.93 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32712,7 +33378,7 @@
 		(dnp no)
 		(uuid "835758a3-b4b2-4a8c-852c-856e119ac363")
 		(property "Reference" "C48"
-			(at 478.79 59.69 90)
+			(at 473.202 59.944 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32722,7 +33388,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 480.06 55.88 90)
+			(at 480.314 56.896 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -35006,7 +35672,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 417.068 94.234 0)
+			(at 417.322 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -35580,6 +36246,96 @@
 			(project "tang-nano-9k-shield"
 				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
 					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 353.06 116.84 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "baab9cf9-b902-4936-b90f-fab516a026fd")
+		(property "Reference" "D8"
+			(at 353.06 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RED"
+			(at 353.06 114.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 353.06 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 353.06 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 353.06 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2286"
+			(at 353.06 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "42648774-24c2-42bc-ba04-ca3134699a30")
+		)
+		(pin "2"
+			(uuid "481322b1-3f2b-480c-a1d3-87046b2ea0ea")
+		)
+		(instances
+			(project "tang-nano-9k-shield"
+				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -39106,6 +39862,96 @@
 			(project "tang-nano-9k-shield"
 				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
 					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 345.44 116.84 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fb3b507a-a1d8-4f62-8885-1959fa978396")
+		(property "Reference" "R66"
+			(at 345.44 114.3 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 345.44 119.38 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 345.44 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 345.44 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 345.44 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 345.44 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ebc59b61-8ac9-438a-b095-5846a35e73e3")
+		)
+		(pin "2"
+			(uuid "19e680ed-2dac-4328-82bd-ee38e20a9e20")
+		)
+		(instances
+			(project "tang-nano-9k-shield"
+				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
+					(reference "R66")
 					(unit 1)
 				)
 			)
