@@ -319,6 +319,9 @@ tang-nano-9k-shield/
 │       └── cpl.csv
 ├── gateware/                          # FPGA designs for the Tang Nano 9K
 │   └── constraints/                   # Gowin .cst pin constraints
+├── CAD/                               # 3D models of the assembled board
+│   ├── tang-nano-9k-shield.glb        # complete board with all parts (colours)
+│   └── tang-nano-9k-shield.step       # for CAD – without parts that only have VRML models
 ├── datasheets/                        # INDEX.md with links to component datasheets
 └── docs/
     ├── schematic.pdf
