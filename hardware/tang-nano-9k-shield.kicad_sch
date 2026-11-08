@@ -12342,8 +12342,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 20.32 -47.244 0)
+			(property "Reference" "U2"
+				(at 0.635 52.07 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -12353,7 +12353,7 @@
 				)
 			)
 			(property "Value" "Tang Nano 9K"
-				(at 14.478 -49.276 0)
+				(at 0.635 49.53 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -12362,7 +12362,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Module:Tang-Nano-9K"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -12404,8 +12404,7 @@
 						(type solid)
 					)
 					(fill
-						(type color)
-						(color 132 132 132 1)
+						(type none)
 					)
 				)
 				(polyline
@@ -14077,121 +14076,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:PWR_FLAG"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(rectangle
 		(start 254 293.37)
@@ -15477,12 +15361,6 @@
 		(uuid "96429fe5-d756-4501-a8e0-c6e2985a69dc")
 	)
 	(junction
-		(at 312.42 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "974b744a-425d-483e-a575-961fc356f4a4")
-	)
-	(junction
 		(at 176.53 264.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -16475,16 +16353,6 @@
 			(type default)
 		)
 		(uuid "1d45719b-85ef-442a-9ef0-8c2f05801833")
-	)
-	(wire
-		(pts
-			(xy 193.04 114.3) (xy 193.04 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1deafbc2-84d9-4a95-9246-9c4202654270")
 	)
 	(wire
 		(pts
@@ -17585,16 +17453,6 @@
 			(type default)
 		)
 		(uuid "4a0b038c-f3c0-4c6c-81f3-d0e78ca44729")
-	)
-	(wire
-		(pts
-			(xy 312.42 116.84) (xy 316.23 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a967a87-c652-4c7a-a0b8-a2686dd0088f")
 	)
 	(wire
 		(pts
@@ -18878,7 +18736,7 @@
 	)
 	(wire
 		(pts
-			(xy 308.61 116.84) (xy 312.42 116.84)
+			(xy 308.61 116.84) (xy 316.23 116.84)
 		)
 		(stroke
 			(width 0)
@@ -21678,16 +21536,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 118.11) (xy 180.34 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6a7a426-d872-4cd3-a633-12ed8f39ab47")
-	)
-	(wire
-		(pts
 			(xy 355.6 140.97) (xy 347.98 140.97)
 		)
 		(stroke
@@ -23655,30 +23503,6 @@
 		(uuid "25d86b85-e25b-4cc3-a080-d1503989902a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 388.62 197.9167 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "5V"
-		(shape input)
-		(at 180.34 118.11 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "37816d32-3421-475c-adcd-85e5e11850d9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 180.34 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30678,83 +30502,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 193.04 114.3 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4d87b8d1-e579-4309-9630-53c6b77a1cc5")
-		(property "Reference" "#FLG0902"
-			(at 193.04 112.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 193.04 109.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.04 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 193.04 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "58df0c65-a642-4641-8988-06d93da95c89")
-		)
-		(instances
-			(project "tang-nano-9k-shield"
-				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
-					(reference "#FLG0902")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 266.7 142.24 90)
 		(unit 1)
@@ -31921,84 +31668,6 @@
 			(project "tang-nano-9k-shield"
 				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
 					(reference "R53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 312.42 116.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6996a65b-b606-4847-9bf9-96728e44ca09")
-		(property "Reference" "#FLG02"
-			(at 312.42 114.935 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 312.42 111.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 312.42 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 312.42 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 312.42 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f7336ba6-a7a8-41a7-8f85-6cb4f1200f63")
-		)
-		(instances
-			(project "tang-nano-9k-shield"
-				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
-					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -34629,83 +34298,6 @@
 			(project "tang-nano-9k-shield"
 				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
 					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 193.04 116.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a1bae9de-b898-4837-9944-db5fae6f4cd5")
-		(property "Reference" "#PWR0961"
-			(at 193.04 114.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 193.04 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.04 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 193.04 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7b6e980c-8416-47c7-8f85-267b32c979f1")
-		)
-		(instances
-			(project "tang-nano-9k-shield"
-				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
-					(reference "#PWR0961")
 					(unit 1)
 				)
 			)
@@ -38121,84 +37713,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 214.63 115.57 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d66454c3-ca2b-4cee-b575-2de7867ceb09")
-		(property "Reference" "#FLG01"
-			(at 214.63 113.665 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 214.63 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 214.63 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "626fafbc-bdee-40ba-9c61-a57a12c51390")
-		)
-		(instances
-			(project "tang-nano-9k-shield"
-				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 274.32 327.66 90)
 		(unit 1)
@@ -39087,83 +38601,6 @@
 			(project "tang-nano-9k-shield"
 				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
 					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 175.26 118.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e8705ec7-ca81-45ea-b777-7ac6ced73350")
-		(property "Reference" "#FLG0901"
-			(at 175.26 116.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 175.26 113.03 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 175.26 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 175.26 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cafba09b-95d8-4303-ad74-9d85348c7feb")
-		)
-		(instances
-			(project "tang-nano-9k-shield"
-				(path "/58d3f204-fc5b-486a-b20d-74f1af4125d4"
-					(reference "#FLG0901")
 					(unit 1)
 				)
 			)

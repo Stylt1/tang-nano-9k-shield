@@ -1,0 +1,8 @@
+#VRML V2.0 utf8
+# APPROXIMATE model generated from footprint/drawing dims - not manufacturer model
+Transform { translation 0.0 4.491515748031496 1.6732283464566928 children Shape { appearance Appearance { material Material { diffuseColor 0.08 0.08 0.08 specularColor 0.3 0.3 0.3 shininess 0.3 } } geometry Box { size 24.0 0.9999999999999997 3.3464566929133857 } } }
+Transform { translation 0.0 -4.491515748031496 1.6732283464566928 children Shape { appearance Appearance { material Material { diffuseColor 0.08 0.08 0.08 specularColor 0.3 0.3 0.3 shininess 0.3 } } geometry Box { size 24.0 0.9999999999999997 3.3464566929133857 } } }
+Transform { translation 0.0 0.0 3.5826771653543306 children Shape { appearance Appearance { material Material { diffuseColor 0.05 0.35 0.15 specularColor 0.3 0.3 0.3 shininess 0.3 } } geometry Box { size 27.559055118110237 10.236220472440944 0.4724409448818895 } } }
+Transform { translation 0.0 0.0 4.094488188976377 children Shape { appearance Appearance { material Material { diffuseColor 0.08 0.08 0.08 specularColor 0.3 0.3 0.3 shininess 0.3 } } geometry Box { size 4.724409448818897 4.724409448818897 0.5511811023622049 } } }
+Transform { translation -12.65748031496063 -0.0 4.448818897637795 children Shape { appearance Appearance { material Material { diffuseColor 0.75 0.75 0.78 specularColor 0.3 0.3 0.3 shininess 0.3 } } geometry Box { size 2.874015748031495 3.543307086614173 1.2598425196850398 } } }
+Transform { translation 12.362204724409448 -0.0 4.921259842519685 children Shape { appearance Appearance { material Material { diffuseColor 0.75 0.75 0.78 specularColor 0.3 0.3 0.3 shininess 0.3 } } geometry Box { size 3.464566929133857 5.984251968503937 2.2047244094488194 } } }

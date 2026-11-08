@@ -75,32 +75,32 @@ The board runs from a **7.5–15 V DC barrel jack**, from **USB‑C**, or from t
 
 | Top | Bottom |
 |:---:|:---:|
-| <img src="docs/images/render-top.jpg" alt="Top" width="100%"> | <img src="docs/images/render-bottom.jpg" alt="Bottom" width="100%"> |
-| <img src="docs/images/render-angle.jpg" alt="Angled view" width="100%"> | <img src="docs/images/render-square.jpg" alt="Flat lay" width="100%"> |
+| <img src="docs/images/renders/render-top.jpg" alt="Top" width="100%"> | <img src="docs/images/renders/render-bottom.jpg" alt="Bottom" width="100%"> |
+| <img src="docs/images/renders/render-angle.jpg" alt="Angled view" width="100%"> | <img src="docs/images/renders/render-square.jpg" alt="Flat lay" width="100%"> |
 
 ### KiCad 3D views
 
 | Top | Bottom |
 |:---:|:---:|
-| <img src="docs/images/kicad-top.jpg" alt="KiCad top" width="100%"> | <img src="docs/images/kicad-bottom.jpg" alt="KiCad bottom" width="100%"> |
+| <img src="docs/images/renders/kicad-top.jpg" alt="KiCad top" width="100%"> | <img src="docs/images/renders/kicad-bottom.jpg" alt="KiCad bottom" width="100%"> |
 
 | VGA side | PS/2 side |
 |:---:|:---:|
-| <img src="docs/images/kicad-vga.jpg" alt="VGA side" width="100%"> | <img src="docs/images/kicad-ps2.jpg" alt="PS/2 side" width="100%"> |
+| <img src="docs/images/renders/kicad-vga.jpg" alt="VGA side" width="100%"> | <img src="docs/images/renders/kicad-ps2.jpg" alt="PS/2 side" width="100%"> |
 
 | DIP switches | Power & Pmod |
 |:---:|:---:|
-| <img src="docs/images/kicad-iso-dip.jpg" alt="DIP switches" width="100%"> | <img src="docs/images/kicad-iso-power.jpg" alt="Power and Pmod" width="100%"> |
+| <img src="docs/images/renders/kicad-iso-dip.jpg" alt="DIP switches" width="100%"> | <img src="docs/images/renders/kicad-iso-power.jpg" alt="Power and Pmod" width="100%"> |
 
 ### Copper layers
 
 | F.Cu – top · GND pour · main signals | In1.Cu – inner 1 · GND reference plane |
 |:---:|:---:|
-| <img src="docs/images/layer-f-cu.png" alt="F.Cu layer" width="100%"> | <img src="docs/images/layer-in1-cu.png" alt="In1.Cu layer" width="100%"> |
+| <img src="docs/images/layers/layer-f-cu.png" alt="F.Cu layer" width="100%"> | <img src="docs/images/layers/layer-in1-cu.png" alt="In1.Cu layer" width="100%"> |
 
 | In2.Cu – inner 2 · 3V3 pour · power & tertiary signals | B.Cu – bottom · GND pour · secondary signals |
 |:---:|:---:|
-| <img src="docs/images/layer-in2-cu.png" alt="In2.Cu layer" width="100%"> | <img src="docs/images/layer-b-cu.png" alt="B.Cu layer" width="100%"> |
+| <img src="docs/images/layers/layer-in2-cu.png" alt="In2.Cu layer" width="100%"> | <img src="docs/images/layers/layer-b-cu.png" alt="B.Cu layer" width="100%"> |
 
 <sub>Renders: KiCad 3D raytracer composited onto CC0 surface textures from <a href="https://polyhaven.com">Poly Haven</a>.</sub>
 
@@ -133,7 +133,7 @@ The board runs from a **7.5–15 V DC barrel jack**, from **USB‑C**, or from t
 
 </details>
 
-Source: [`block_diagram.kicad_sch`](block_diagram.kicad_sch)
+Source: [`hardware/block_diagram.kicad_sch`](hardware/block_diagram.kicad_sch)
 
 ## Schematic
 
@@ -141,7 +141,7 @@ Source: [`block_diagram.kicad_sch`](block_diagram.kicad_sch)
   <img src="docs/images/schematic.png" alt="Schematic" width="100%">
 </p>
 
-Source: [`tang-nano-9k-shield.kicad_sch`](tang-nano-9k-shield.kicad_sch)
+📄 Full-resolution PDF: [`docs/schematic.pdf`](docs/schematic.pdf) · Source: [`hardware/tang-nano-9k-shield.kicad_sch`](hardware/tang-nano-9k-shield.kicad_sch)
 
 ## Hardware
 
@@ -269,15 +269,23 @@ Source: [`tang-nano-9k-shield.kicad_sch`](tang-nano-9k-shield.kicad_sch)
 
 Images of each copper layer are in the [Gallery](#copper-layers).
 
-Custom 3D models for the Tang Nano 9K, PS/2, VGA, DIP switches and DC jack are included in [`3dmodels/`](3dmodels).
+Custom 3D models for the Tang Nano 9K, PS/2, VGA, DIP switches and DC jack are included in [`hardware/3dmodels/`](hardware/3dmodels).
 
 ## Getting started
 
 ### Ordering
-1. Open `tang-nano-9k-shield.kicad_pcb` in KiCad 10.
-2. Export Gerbers + drill files (**File → Fabrication Outputs**).
-3. Order as a **4‑layer** board using the **JLC04161H‑7628** stackup.
-4. The schematic contains **LCSC** part numbers for assembly.
+Ready-to-upload files for JLCPCB are in [`production/v1.0/`](production/v1.0):
+
+| File | Upload to JLCPCB as |
+|---|---|
+| `gerbers.zip` | Gerber files (Gerbers + Excellon drill) |
+| `bom.csv` | BOM (with LCSC part numbers) |
+| `cpl.csv` | CPL / pick & place |
+
+1. Upload `gerbers.zip`, select **4 layers** and the **JLC04161H‑7628** stackup (1.6 mm).
+2. For assembly, add `bom.csv` and `cpl.csv` and check part rotations in the JLC preview.
+
+To regenerate the files, open `hardware/tang-nano-9k-shield.kicad_pro` in KiCad 10 and use **File → Fabrication Outputs**.
 
 ### Bring‑up
 1. Power the board from a **current‑limited** supply on the DC jack, *without* the Tang Nano, and check **5 V, 3.3 V and 1.8 V**.
@@ -292,13 +300,31 @@ Custom 3D models for the Tang Nano 9K, PS/2, VGA, DIP switches and DC jack are i
 
 ```text
 tang-nano-9k-shield/
-├── tang-nano-9k-shield.kicad_pro   # KiCad project
-├── tang-nano-9k-shield.kicad_sch   # Schematic
-├── tang-nano-9k-shield.kicad_pcb   # PCB layout
-├── block_diagram.kicad_sch         # Block diagram
-├── 3dmodels/                       # Custom 3D models (VRML / STEP)
-├── datasheets/                     # Component datasheets + INDEX.md
-└── docs/images/                    # Renders, layer, block-diagram and schematic images used in this README
+├── README.md
+├── LICENSE
+├── hardware/                          # KiCad 10 project
+│   ├── tang-nano-9k-shield.kicad_pro
+│   ├── tang-nano-9k-shield.kicad_sch  # Schematic
+│   ├── tang-nano-9k-shield.kicad_pcb  # PCB layout
+│   ├── block_diagram.kicad_pro
+│   ├── block_diagram.kicad_sch        # Block diagram
+│   └── 3dmodels/                      # Custom 3D models (VRML / STEP)
+├── production/
+│   └── v1.0/                          # JLCPCB fabrication outputs
+│       ├── gerbers/                   # Gerbers + drill (unzipped)
+│       ├── gerbers.zip
+│       ├── bom.csv
+│       └── cpl.csv
+├── firmware/                          # RP2040 firmware (planned)
+├── gateware/                          # FPGA designs for the Tang Nano 9K (planned)
+├── datasheets/                        # INDEX.md with links to component datasheets
+└── docs/
+    ├── schematic.pdf
+    └── images/
+        ├── renders/                   # Renders and KiCad 3D views
+        ├── layers/                    # Copper layer images
+        ├── block-diagram.png
+        └── schematic.png
 ```
 
 ## Status
@@ -306,6 +332,7 @@ tang-nano-9k-shield/
 - [x] Schematic
 - [x] PCB layout & routing (DRC: 0 unconnected)
 - [x] 3D models & renders
+- [x] Fabrication outputs (Gerbers, BOM, CPL) – rev 1.0
 - [ ] Prototype manufactured
 - [ ] Hardware bring‑up
 - [ ] RP2040 firmware
@@ -313,8 +340,7 @@ tang-nano-9k-shield/
 
 ## License
 
-<!-- Choose a license, e.g. CERN‑OHL‑S‑2.0 for hardware and MIT for firmware -->
-© 2026 Stylt. License to be added.
+© 2026 Stylt1. This project is licensed under [CC BY‑NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) – see [`LICENSE`](LICENSE).
 
 ---
 
