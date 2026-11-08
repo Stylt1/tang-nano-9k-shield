@@ -285,6 +285,8 @@ Ready-to-upload files for JLCPCB are in [`production/v1.0/`](production/v1.0):
 1. Upload `gerbers.zip`, select **4 layers** and the **JLC04161H‑7628** stackup (1.6 mm).
 2. For assembly, add `bom.csv` and `cpl.csv` and check part rotations in the JLC preview.
 
+Estimated cost (parts, PCB, assembly): [`production/v1.0/COSTS.md`](production/v1.0/COSTS.md).
+
 To regenerate the files, open `hardware/tang-nano-9k-shield.kicad_pro` in KiCad 10 and use **File → Fabrication Outputs**.
 
 ### Bring‑up
@@ -314,7 +316,8 @@ tang-nano-9k-shield/
 │       ├── gerbers/                   # Gerbers + drill (unzipped)
 │       ├── gerbers.zip
 │       ├── bom.csv
-│       └── cpl.csv
+│       ├── cpl.csv
+│       └── COSTS.md                   # cost estimate
 ├── gateware/                          # FPGA designs for the Tang Nano 9K
 │   └── constraints/                   # Gowin .cst pin constraints
 ├── datasheets/                        # INDEX.md with links to component datasheets
