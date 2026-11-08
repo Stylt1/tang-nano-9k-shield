@@ -25,6 +25,7 @@ VGA · dual PS/2 · RP2040 co‑processor · USB‑C · Pmod · 16 DIP switches 
 - [Features](#features)
 - [Gallery](#gallery)
 - [Block diagram](#block-diagram)
+- [Schematic](#schematic)
 - [Hardware](#hardware)
   - [Power](#power)
   - [Video – VGA](#video--vga)
@@ -105,6 +106,13 @@ The board runs from a **7.5–15 V DC barrel jack**, from **USB‑C**, or from t
 
 ## Block diagram
 
+<p align="center">
+  <img src="docs/images/block-diagram.png" alt="Block diagram" width="100%">
+</p>
+
+<details>
+<summary><b>Text version</b></summary>
+
 ```text
                     ┌──────────────────────────────┐
   DC 7.5–15 V ──►   │  TPS563201 buck  →  5V_BUCK  │──┐
@@ -122,6 +130,18 @@ The board runs from a **7.5–15 V DC barrel jack**, from **USB‑C**, or from t
  │                       │◄─ SPI (CS2 / INT2) ──► SPI header               │
  └───────────────────────┘                      └─────────────────────────┘
 ```
+
+</details>
+
+Source: [`block_diagram.kicad_sch`](block_diagram.kicad_sch)
+
+## Schematic
+
+<p align="center">
+  <img src="docs/images/schematic.png" alt="Schematic" width="100%">
+</p>
+
+Source: [`tang-nano-9k-shield.kicad_sch`](tang-nano-9k-shield.kicad_sch)
 
 ## Hardware
 
@@ -278,7 +298,7 @@ tang-nano-9k-shield/
 ├── block_diagram.kicad_sch         # Block diagram
 ├── 3dmodels/                       # Custom 3D models (VRML / STEP)
 ├── datasheets/                     # Component datasheets + INDEX.md
-└── docs/images/                    # Renders and copper-layer images used in this README
+└── docs/images/                    # Renders, layer, block-diagram and schematic images used in this README
 ```
 
 ## Status
