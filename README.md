@@ -12,7 +12,8 @@ VGA · dual PS/2 · RP2040 co‑processor · USB‑C · Pmod · 16 DIP switches 
 ![FPGA](https://img.shields.io/badge/FPGA-Gowin%20GW1NR--9-orange)
 ![MCU](https://img.shields.io/badge/MCU-RP2040-C51A4A?logo=raspberrypi&logoColor=white)
 
-<img src="docs/images/hero.jpg" alt="Tang Nano 9K Shield" width="90%">
+<img width="3000" height="2000" alt="01_white_desk_flatlay" src="https://github.com/user-attachments/assets/8d082b64-95c1-4333-bd85-13104ec2b11a" />
+
 
 </div>
 
@@ -33,6 +34,7 @@ VGA · dual PS/2 · RP2040 co‑processor · USB‑C · Pmod · 16 DIP switches 
   - [Headers](#headers)
 - [Pin mapping](#pin-mapping)
 - [PCB](#pcb)
+  - [Layer stack](#layer-stack)
 - [Getting started](#getting-started)
 - [Repository structure](#repository-structure)
 - [Status](#status)
@@ -88,6 +90,16 @@ The board runs from a **7.5–15 V DC barrel jack**, from **USB‑C**, or from t
 | DIP switches | Power & Pmod |
 |:---:|:---:|
 | <img src="docs/images/kicad-iso-dip.jpg" alt="DIP switches" width="100%"> | <img src="docs/images/kicad-iso-power.jpg" alt="Power and Pmod" width="100%"> |
+
+### Copper layers
+
+| F.Cu – top · GND pour · main signals | In1.Cu – inner 1 · GND reference plane |
+|:---:|:---:|
+| <img src="docs/images/layer-f-cu.png" alt="F.Cu layer" width="100%"> | <img src="docs/images/layer-in1-cu.png" alt="In1.Cu layer" width="100%"> |
+
+| In2.Cu – inner 2 · 3V3 pour · power & tertiary signals | B.Cu – bottom · GND pour · secondary signals |
+|:---:|:---:|
+| <img src="docs/images/layer-in2-cu.png" alt="In2.Cu layer" width="100%"> | <img src="docs/images/layer-b-cu.png" alt="B.Cu layer" width="100%"> |
 
 <sub>Renders: KiCad 3D raytracer composited onto CC0 surface textures from <a href="https://polyhaven.com">Poly Haven</a>.</sub>
 
@@ -220,11 +232,22 @@ The board runs from a **7.5–15 V DC barrel jack**, from **USB‑C**, or from t
 | | |
 |---|---|
 | **Size** | ~100 × 100 mm |
-| **Layers** | 4 – signal / GND / 3V3 / signal |
+| **Layers** | 4 – F.Cu / In1.Cu / In2.Cu / B.Cu (see [Layer stack](#layer-stack)) |
 | **Stackup** | JLCPCB JLC04161H‑7628, 1.6 mm, 1 oz outer / 0.5 oz inner |
 | **Min. via** | 0.45 / 0.2 mm |
 | **Components** | SMD 0603 / 0402 passives, SOT‑23, QFN‑56, TSSOP‑20 + THT connectors |
 | **EDA** | KiCad 10 |
+
+### Layer stack
+
+| # | Layer | Copper pour (fill) | Routed on this layer |
+|:---:|---|---|---|
+| 1 | **F.Cu** (top) | GND | Main signals, component fan‑out |
+| 2 | **In1.Cu** (inner 1) | GND – solid plane | Reference ground for the top‑layer signals |
+| 3 | **In2.Cu** (inner 2) | 3V3 | Power distribution, tertiary signals |
+| 4 | **B.Cu** (bottom) | GND | Secondary signals |
+
+Images of each copper layer are in the [Gallery](#copper-layers).
 
 Custom 3D models for the Tang Nano 9K, PS/2, VGA, DIP switches and DC jack are included in [`3dmodels/`](3dmodels).
 
@@ -255,7 +278,7 @@ tang-nano-9k-shield/
 ├── block_diagram.kicad_sch         # Block diagram
 ├── 3dmodels/                       # Custom 3D models (VRML / STEP)
 ├── datasheets/                     # Component datasheets + INDEX.md
-└── docs/images/                    # Renders used in this README
+└── docs/images/                    # Renders and copper-layer images used in this README
 ```
 
 ## Status
