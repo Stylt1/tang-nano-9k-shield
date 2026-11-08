@@ -1,13 +1,14 @@
 # Gateware – Tang Nano 9K (Gowin GW1NR-9)
 
-FPGA designs for the shield (not added yet).
+FPGA designs for the shield.
 
-Planned layout:
+Layout:
 
 ```text
 gateware/
-├── constraints/      # shared .cst pin constraints for the shield
-└── examples/         # e.g. VGA test pattern, PS/2 keyboard, SPI bridge
+├── constraints/
+│   └── tang-nano-9k-shield.cst   # pin constraints for all shield I/O
+└── examples/                     # planned: VGA test pattern, PS/2, SPI bridge
 ```
 
 Pin mapping: see the FPGA table in the main [README](../README.md#pin-mapping).

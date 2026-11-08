@@ -22,8 +22,7 @@ fp-info-cache
 *.kicad_sch-bak
 *.kicad_pcb-bak
 
-# --- Firmware / gateware build outputs ---
-firmware/**/build/
+# --- Gateware build outputs ---
 gateware/**/impl/
 
 # --- OS / editor junk ---

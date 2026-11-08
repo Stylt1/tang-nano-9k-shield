@@ -315,8 +315,8 @@ tang-nano-9k-shield/
 │       ├── gerbers.zip
 │       ├── bom.csv
 │       └── cpl.csv
-├── firmware/                          # RP2040 firmware (planned)
-├── gateware/                          # FPGA designs for the Tang Nano 9K (planned)
+├── gateware/                          # FPGA designs for the Tang Nano 9K
+│   └── constraints/                   # Gowin .cst pin constraints
 ├── datasheets/                        # INDEX.md with links to component datasheets
 └── docs/
     ├── schematic.pdf
