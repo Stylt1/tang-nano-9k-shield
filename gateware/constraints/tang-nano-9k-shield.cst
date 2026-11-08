@@ -48,8 +48,8 @@ IO_PORT "btn[1]" IO_TYPE=LVCMOS18 PULL_MODE=NONE;
 
 
 // ---------------------------------------------------------------------------
-// VGA (J2, DE-15) – 4-bit R-2R-style resistor DAC per channel (RGB444)
-// Bit 0 = LSB (3.9k), bit 3 = MSB (510R)
+// VGA (J2, DE-15) – 4-bit binary-weighted resistor DAC per channel (RGB444)
+// Bit 0 = LSB (3.9k), 1 = 2k, 2 = 1k, bit 3 = MSB (510R); HS/VS via 100R
 // ---------------------------------------------------------------------------
 IO_LOC  "vga_r[0]" 57;
 IO_LOC  "vga_r[1]" 56;
@@ -125,26 +125,27 @@ IO_PORT "sd_cs"    IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
 // ---------------------------------------------------------------------------
 // Pmod (J8, 2x6) via TXS0108E: FPGA side 1.8 V, Pmod side 3.3 V
 // No internal pulls – they fight the TXS0108E one-shot edge accelerators.
-// Index = Digilent Pmod pin number (1-4 top row, 7-10 bottom row).
+// Bus pmod[7:0]; Digilent Pmod pin numbers are in the comments
+// (pins 1-4 = top row, 7-10 = bottom row, 5/11 GND, 6/12 3V3).
 // Pin 86 is also BL_PWM for the Tang's LCD connector – leave the LCD unplugged.
 // ---------------------------------------------------------------------------
-IO_LOC  "pmod[1]"  86;   // TXS A1 -> B1
-IO_LOC  "pmod[2]"  84;   // TXS A3 -> B3
-IO_LOC  "pmod[3]"  82;   // TXS A5 -> B5
-IO_LOC  "pmod[4]"  80;   // TXS A7 -> B7
-IO_LOC  "pmod[7]"  85;   // TXS A2 -> B2
-IO_LOC  "pmod[8]"  83;   // TXS A4 -> B4
-IO_LOC  "pmod[9]"  81;   // TXS A6 -> B6
-IO_LOC  "pmod[10]" 79;   // TXS A8 -> B8
+IO_LOC  "pmod[0]" 86;   // Pmod pin 1   (TXS A1 -> B1)
+IO_LOC  "pmod[1]" 84;   // Pmod pin 2   (TXS A3 -> B3)
+IO_LOC  "pmod[2]" 82;   // Pmod pin 3   (TXS A5 -> B5)
+IO_LOC  "pmod[3]" 80;   // Pmod pin 4   (TXS A7 -> B7)
+IO_LOC  "pmod[4]" 85;   // Pmod pin 7   (TXS A2 -> B2)
+IO_LOC  "pmod[5]" 83;   // Pmod pin 8   (TXS A4 -> B4)
+IO_LOC  "pmod[6]" 81;   // Pmod pin 9   (TXS A6 -> B6)
+IO_LOC  "pmod[7]" 79;   // Pmod pin 10  (TXS A8 -> B8)
 
-IO_PORT "pmod[1]"  IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
-IO_PORT "pmod[2]"  IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
-IO_PORT "pmod[3]"  IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
-IO_PORT "pmod[4]"  IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
-IO_PORT "pmod[7]"  IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
-IO_PORT "pmod[8]"  IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
-IO_PORT "pmod[9]"  IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
-IO_PORT "pmod[10]" IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
+IO_PORT "pmod[0]" IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
+IO_PORT "pmod[1]" IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
+IO_PORT "pmod[2]" IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
+IO_PORT "pmod[3]" IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
+IO_PORT "pmod[4]" IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
+IO_PORT "pmod[5]" IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
+IO_PORT "pmod[6]" IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
+IO_PORT "pmod[7]" IO_TYPE=LVCMOS18 PULL_MODE=NONE DRIVE=8;
 
 
 // ---------------------------------------------------------------------------
